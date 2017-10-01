@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	  <meta name="description" content="My name is Ismail Mondal and I am a Front-end Developer, living in Kolkata.	I'm very passionate about Web development and design.">
-	  <meta name="keywords" content="Ismail Mondal, Let's build something together!">
-    <link rel="icon" href="favicon.ico">
-
-    <title>Ismail Mondal | Portfolio</title>
-    
+    <title>Ismail Mondal | Portfolio</title>    
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
@@ -19,15 +14,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!--<script src="js/ie-emulation-modes-warning.js"></script>-->
-    
-    <style>
-		@import url('https://fonts.googleapis.com/css?family=Roboto');
-	</style> 
+    <link href="css/starter-template.css" rel="stylesheet">   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,181 +26,194 @@
     <link href="css/custom-scrollbar.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/css.css" rel="stylesheet" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-      
-    <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
-    
-    <script type="text/javascript">
-		<!----- JQUERY FOR SLIDING NAVIGATION --->   
-		$(document).ready(function() {
-			$('a[href*=#]').each(function() {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-				&& location.hostname == this.hostname
-				&& this.hash.replace(/#/,'') ) {
-					var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-					var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-					 if ($target) {
-						 var targetOffset = $target.offset().top;
-		
-		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-						 $(this).click(function() {
-								$("#nav li a").removeClass("active");
-								$(this).addClass('active');
-							 $('html, body').animate({scrollTop: targetOffset}, 6000);
-							 return false;
-						 });
-					}
-				}
-			});
-		});
-		</script>
+    <link rel="stylesheet" href="css/animate.css">    
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>    
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
   
-  <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-104373025-2', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
     
     
-    <div id="loading">
-        <div id="loading-center">
-                <div id="loading-center-absolute">
-                <div class="object" id="first_object"></div>
-                <div class="object" id="second_object"></div>
-                <div class="object" id="third_object"></div>
-            </div>
+<!--div id="loading">
+    <div id="loading-center-absolute">
+        <div class="cssload-loader">
+          <div class="cssload-flipper">
+            <div class="cssload-front"></div>
+            <div class="cssload-back"></div>
+          </div>
         </div>
     </div>
-    
-    <div class="bottom-button">
-      <a href="#" class="scrollToTop">
-        <i class="fa fa-chevron-up"></i>
-     </a>
-	</div>
+</div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://ismail.github.io">Ismail Mondal</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul id="nav" class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<header id="home" class="intro-header">
+  <div class="container">
+    <div class="intro-message">
+      <h3>Welcome</h3>
+      <h1>To My Portfolio</h1>
+      <hr class="intro-divider">
+      <ul class="list-inline intro-social-buttons">
+        <li class="list-inline-item">
+          <a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-twitter fa-fw"></i>
+            <span class="network-name">Twitter</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-github fa-fw"></i>
+            <span class="network-name">Github</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-linkedin fa-fw"></i>
+            <span class="network-name">Linkedin</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div id="about" class="about container">
+	<h2 class="text-center">About Me</h2>
+	<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+	<ul class="knows">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>SASS</li>
+		<li>JQUERY</li>
+		<li>BOOTSTRAP</li>
+		<li>PHOTOSHOP</li>
+	</ul>
+</div>
+
+
+
+<aside class="banner" id="contact">
+	<div class="overlaygray">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://ismail.github.io">Ismail Mondal</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul id="nav" class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="bookmarks.html">Bookmarks</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      	<h2>Contact me</h2>
+  		<p class="lead">Let's build something together! Or <a href="mailto:ismailmondal220@gmail.com">email</a> me if you have any other questions.</p>
+        <div class="row">
 
 
-
-
-      <div class="container" id="contact">
-        <div class="starter-template">
-          <h2>Contact me</h2>
-          <p class="lead">Let's build something together! Or <a href="mailto:ismailmondal220@gmail.com">email</a> me if you have any other questions.</p>
+          <div class="col-lg-6 my-auto auto">
+            <div class="company-info">
+		        <dl class="dl-horizontal">
+		          <dt>Email</dt>
+		          <dd>ismailmondal220@gmail.com</dd>
+		          
+		          <dt><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> Mobile</dt>
+		          <dd><a href="tel:+919831346313" title="Call Me">+918172036798</a></dd>
+		          
+		        </dl>
+		      </div>
           </div>
-          
-          
-          <div class="wrapper">
-              <div class="company-info">
-                <dl class="dl-horizontal">
-                  <dt>Email</dt>
-                  <dd>ismailmondal220@gmail.com</dd>
-                  
-                  <dt><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> Mobile</dt>
-                  <dd><a href="tel:+919831346313" title="Call Me">+918172036798</a></dd>
-                  
-                </dl>
-              </div>
-              <div class="contact">
-                <h3>Email Us</h3>
-                <div class="alert">Your message has been sent</div>
-                <form id="contactForm">
-                  <p>
-                    <label>Name</label>
-                    <input type="text" name="name" id="name" required>
-                  </p>
-                  <p>
-                    <label>Company</label>
-                    <input type="text" name="company" id="company">
-                  </p>
-                  <p>
-                    <label>Email Address</label>
-                    <input type="email" name="email" id="email" required>
-                  </p>
-                  <p>
-                    <label>Phone Number</label>
-                    <input type="text" name="phone" id="phone">
-                  </p>
-                  <p class="full">
-                    <label>Message</label>
-                    <textarea name="message" rows="5" id="message"></textarea>
-                  </p>
-                  <p class="full">
-                    <button type="submit">Submit</button>
-                  </p>
-                </form>
-              </div>
-            </div>
-          
-      </div>
 
-      <footer class="footer">
-        <div class="container">
-          <p class="text-muted">&copy; <a href="https://ismail.github.io">ismailmondal.github.io</a> 2017</p>
+          <div class="col-lg-6 my-auto">
+            <div class="contact">
+		        <h3>Email Us</h3>
+		        <div class="alert">Your message has been sent</div>
+		        <form id="contactForm">
+		          <p>
+		            <input type="text" name="name" id="name" placeholder="Name" required>
+		          </p>
+		          <p>
+		            <input type="text" name="company" id="company" placeholder="Company">
+		          </p>
+		          <p>
+		            <input type="email" name="email" id="email" placeholder="Email Address" required>
+		          </p>
+		          <p>
+		            <input type="text" name="phone" id="phone" placeholder="Phone Number">
+		          </p>
+		          <p class="full">
+		            <textarea name="message" rows="3" id="message" placeholder="Message"></textarea>
+		          </p>
+		          <p class="full">
+		            <button type="submit">Submit</button>
+		          </p>
+		        </form>
+		      </div>
+          </div>
         </div>
-      </footer>
+
+      </div>
+	</div>
+</aside>
+
+
+
+<footer class="footer">
+	<div class="container">
+	  <p class="text-muted">&copy; <a href="https://ismail.github.io">ismailmondal.github.io</a> 2017</p>
+	</div>
+</footer>
+
+
+<div class="bottom-button">
+  <a href="#" class="scrollToTop">
+    <i class="fa fa-chevron-up"></i>
+ </a>
+</div-->
 
 
     <!-- Bootstrap core JavaScript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    
-    <script src="js/plugins.js" type="text/javascript"></script> 
-		<script src="js/carousel.js" type="text/javascript"></script> 
-        <script src="js/jquery.scrollUp.min.js"></script>
-    <script>
-        AI.init();
-    </script>
-    
-    <script language="JavaScript">
-    // Code for validating the form
-    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-    // for details
-    
-    //var frmvalidator  = new Validator("contactform");
-    //frmvalidator.addValidation("name","req","Please provide your name"); 
-    //frmvalidator.addValidation("email","req","Please provide your email");
-    //frmvalidator.addValidation("email","email","Please enter a valid email address");
-        
-        
-    </script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>    
+	<script src="js/carousel.js" type="text/javascript"></script> 
+    <script src="js/jquery.scrollUp.min.js"></script>  
     <script src="js/custom.js"></script>
     <!--script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="js/main.js"></script-->
+
+
+
+
+    <script type="text/javascript">
+    	$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop(),
+		    	headH = $(".navbar").height();
+		    if (scroll >= headH) {
+		        $(".navbar").addClass("srolled");
+		    } else {
+		    	$(".navbar").removeClass("srolled");
+		    }
+		});
+    </script>
+
+
+
+
+
+
   </body>
 </html>
