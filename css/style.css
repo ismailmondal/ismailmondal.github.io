@@ -222,14 +222,20 @@ ul,li {
 /*==========================================
 	Main Header style
 ===========================================*/
-
+.main-header .navbar-brand h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #414857;
+    line-height: normal;
+}
 .main-header {
-	position:fixed;
-	left:0px;
-	top:0px;
-	z-index:999;
-	width:100%;
-	background:#ffffff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 1px 6px 20px 3px rgba(65, 72, 87, 0.02);
 }
 .main-header .navbar-brand {
     margin: 0;
@@ -965,10 +971,10 @@ ul,li {
 	color: #ffffff;
 }
 
-.main-slider .tp-bannertimer,
+/*.main-slider .tp-bannertimer,
 .main-slider .tp-bullets{
 	display:none !important;	
-}
+}*/
 
 .main-slider .tp-caption{
 	z-index:5 !important;
