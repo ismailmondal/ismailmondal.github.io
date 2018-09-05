@@ -26,6 +26,12 @@
 	}
 	
 	headerStyle();
+
+	$('.scroll-to-top').click(function(){
+		$('html, body').animate({
+	       scrollTop: 0
+	    }, 300);
+	});
 	
 	
 	
@@ -66,11 +72,7 @@
 	   var hash = this.hash;
 	   $('html, body').animate({
 	       scrollTop: $(hash).offset().top
-	    }, 300, 
-	    // function(){
-	    //    window.location.hash = hash;
-	    // }
-	    );
+	    }, 300);
 	});
 	
 
@@ -105,15 +107,13 @@
 
     // Elements Animation
 	if($('.wow').length){
-		var wow = new WOW(
-		  {
-			boxClass:     'wow',      // animated element css class (default is wow)
-			animateClass: 'animated', // animation css class (default is animated)
-			offset:       0,          // distance to the element when triggering the animation (default is 0)
-			mobile:       true,       // trigger animations on mobile devices (default is true)
-			live:         true       // act on asynchronously loaded content (default is true)
-		  }
-		);
+		var wow = new WOW({
+			boxClass:     'wow',
+			animateClass: 'animated',
+			offset:       0,
+			mobile:       true,
+			live:         true
+		  });
 		wow.init();
 	};
 
@@ -137,7 +137,6 @@
 			});
 	
 			winDow.on('resize', function(){
-
 				$container.isotope({ 
 					itemSelector: '._msitm',
 					animationOptions: {
@@ -148,9 +147,24 @@
 				});
 			});
 		}
-	}
-	
+	}	
 	enableMasonry();
+
+	//LightBox / Fancybox
+	if($('.lightbox-image').length) {
+		$('.lightbox-image').fancybox({
+			openEffect  : 'fade',
+			closeEffect : 'fade',
+			helpers : {
+				media : {}
+			}
+		});
+	}
+
+	$('.form-control').on('focus blur', function (e) {
+    	$(this).parents('.form-group').toggleClass('focused', 
+    	(e.type === 'focus' || this.value.length > 0));
+	}).trigger('blur');
 
 	
 

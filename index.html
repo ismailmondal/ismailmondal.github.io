@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="utf-8">
-      <title>Ismail Mondal</title>
+      <title>Ismail Mondal</title>      
       <!-- Responsive -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -12,25 +11,31 @@
       <link href="css/bootstrap.css" rel="stylesheet">
       <!-- REVOLUTION SETTINGS STYLES -->
       <link href="css/settings.css" rel="stylesheet" type="text/css">
-      <link href="css/animate.css" rel="stylesheet" type="text/css">      
-      <!-- custom css -->
+      <link href="css/animate.css" rel="stylesheet" type="text/css"> 
+      <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"> 
+      <!-- custom -->
       <link href="css/style.css" rel="stylesheet">
       <link href="css/responsive.css" rel="stylesheet">
    </head>
 
-   <body class="page-wrapper" data-spy="scroll" data-target=".main-header" data-offset="77"> 
+
+   <body class="page-wrapper" data-spy="scroll" data-target=".main-header" data-offset="77">
 
       <!-- Preloader -->
       <div class="preloader"></div>
 
-      <!-- nav -->
-      <!-- <nav class="navbar navbar-expand-lg main-header">                  
+      <nav class="navbar navbar-expand-lg main-header">                  
          <a href="index.html" class="navbar-brand">
             <h1>Ismail Mondal</h1>
-         </a>     
+         </a>
+
+         <!-- Toggle Button -->       
          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
          </button>
+         <!-- Toggle Button --> 
+
+
          <div class="navbar-collapse collapse justify-content-end" id="navbar">
             <ul class="navbar-nav">
                <li class="nav-item">
@@ -43,17 +48,20 @@
                   <a class="nav-link" href="#portfolio">Portfolio</a>
                </li>
                <li>
-                  <a class="nav-link" href="#">Contact Me</a>
+                  <a class="nav-link" href="#contact">Contact Me</a>
                </li>
             </ul>
          </div>
-         <button class="nav-toggler hidden-bar-opener">
-            <span></span>
-            <span></span>
-            <span></span>
-         </button>
-      </nav> -->
-      <!-- nav end -->
+
+         <!-- Hidden Nav Toggler -->
+            <button class="nav-toggler hidden-bar-opener">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         <!-- / Hidden Nav Toggler -->
+      </nav>
+
 
       <!-- Hidden Navigation Bar -->
       <section class="hidden-bar right-align">
@@ -84,13 +92,14 @@
          </div>
          <!-- / Hidden Bar Wrapper -->
       </section>
-      <!-- Hidden Navigation Bar end -->
+      <!-- End / Hidden Bar -->
 
       <!--Main Slider-->
-      <!-- <section id="home" class="main-slider">
+      <section id="home" class="main-slider">
             <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
                <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                   <ul>
+                     <!-- Slide Two -->
                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/image-5.jpg"> 
                         <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad- rs-parallaxlevel-3" 
@@ -189,7 +198,7 @@
                            data-x="['left','left','left','left']"
                            data-y="['middle','middle','middle','middle']"
                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h1 class="alternate"><span class="theme_color">Good Design</span> is a language</h1>
+                           <h1 class="alternate"><span class="theme_color">Design</span> is a language</h1>
                         </div>
                         <div class="tp-caption rs-parallaxlevel-4" 
                            data-paddingbottom="[0,0,0,0]"
@@ -205,9 +214,10 @@
                            data-x="['left','left','left','left']"
                            data-y="['middle','middle','middle','middle']"
                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <a href="about.html" class="theme-btn btn-style-one"><span>Get Started</span></a>
+                           <a href="images/201010-SAMPLE-RESUME-FORMAT.doc" download class="theme-btn btn-style-one"><span>Get Started</span></a>
                         </div>
                      </li>
+                     <!-- Slide One -->
                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/image-5.jpg">
                         <div class="tp-caption rs-parallaxlevel-2" 
@@ -225,7 +235,7 @@
                            data-x="['left','left','left','left']"
                            data-y="['middle','middle','middle','middle']"
                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h1><span class="theme_color">creation</span> is happyness</h1>
+                           <h1><span class="theme_color">happiness</span> is in creation</h1>
                         </div>
                         <div class="tp-caption rs-parallaxlevel-4" 
                            data-paddingbottom="[0,0,0,0]"
@@ -297,11 +307,11 @@
                   </ul>
                </div>
             </div>
-      </section> -->
-      <!-- Main Slider end-->
+      </section>
+      <!--End Main Slider-->
 
-      <!-- about -->
-      <!-- <section  id="about" class="about">
+
+      <section  id="about" class="about">
          <span class="wow blur_icon circle zoomInStable" data-wow-duration="2s"></span>
          <span class="wow blur_icon triangle zoomInStable" data-wow-duration="2s"></span>
          <span class="wow blur_icon circleSm zoomInStable" data-wow-duration="2s"></span>
@@ -317,33 +327,33 @@
                      <div class="_sklswrp">
                         <ul class="flex _sklst">
                            <li>
-                              <div class="flex">
+                              <div class="flex wow zoomInStable" data-wow-delay="0ms" data-wow-duration="1000ms">
                                  <div class="_sklstrt">
-                                    <img src="images/paint-palette.svg" class="img-fluid"/>
+                                    <img src="images/icons/ui.svg" class="img-fluid"/>
                                     <h2>Ui & Ux</h2>
                                  </div>
                               </div>
                            </li>
                            <li>
-                              <div class="flex">
+                              <div class="flex wow zoomInStable" data-wow-delay="300ms" data-wow-duration="1000ms">
                                  <div class="_sklstrt">
-                                    <img src="images/paint-palette.svg" class="img-fluid"/>
+                                    <img src="images/icons/product.svg" class="img-fluid"/>
                                     <h2>Prototype</h2>
                                  </div>
                               </div>
                            </li>
                            <li>
-                              <div class="flex">
+                              <div class="flex wow zoomInStable" data-wow-delay="600ms" data-wow-duration="1500ms">
                                  <div class="_sklstrt">
-                                    <img src="images/paint-palette.svg" class="img-fluid"/>
+                                    <img src="images/icons/paint-palette.svg" class="img-fluid"/>
                                     <h2>Website</h2>
                                  </div>
                               </div>
                            </li>
                            <li>
-                              <div class="flex">
+                              <div class="flex wow zoomInStable" data-wow-delay="900ms" data-wow-duration="1500ms">
                                  <div class="_sklstrt">
-                                    <img src="images/paint-palette.svg" class="img-fluid"/>
+                                    <img src="images/icons/responsive.svg" class="img-fluid"/>
                                     <h2>Responsive</h2>
                                  </div>
                               </div>
@@ -358,82 +368,133 @@
                   </div>
               </div>
           </div>
-      </section> -->
-      <!-- about end -->
+      </section>
 
-      <!--Portfolio -->
-      <!-- <section class="_portfolio" id="portfolio">
-           <div class="container">
-               <h2 class="hd_main_ text-center">My Amazing Portfolio</h2>
-               <div class="row _mscntnr">                   
-                  <div class="_prtflioitem _msitm col-3">
-                       <div class="_pfimg wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
-                           <img src="images/americanstyle.jpg" alt="" class="img-fluid">
-                           <div class="_pfbtn">
-                               <a href="images/americanstyle.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="fa fa-search"></i></a>
-                               <a href="#"><i class="fa fa-link"></i></a>
-                           </div>
-                       </div>
-                  </div>
-                  <div class="_prtflioitem _msitm col-6">
-                       <div class="_pfimg wow fadeIn" data-wow-delay="500ms" data-wow-duration="1500ms">
-                           <img src="images/americanstyle.jpg" alt="" class="img-fluid">
-                           <div class="_pfbtn">
-                               <a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="fa fa-search"></i></a>
-                               <a href="#"><i class="fa fa-link"></i></a>
-                           </div>
-                       </div>
-                  </div>
-                  <div class="_prtflioitem _msitm col-3">
-                       <div class="_pfimg wow fadeIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
-                           <img src="images/clicandmove.jpg" alt="" class="img-fluid">
-                           <div class="_pfbtn">
-                               <a href="images/clicandmove.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="fa fa-search"></i></a>
-                               <a href="#"><i class="fa fa-link"></i></a>
-                           </div>
-                       </div>
-                  </div>
-                  <div class="_prtflioitem _msitm col-3">
-                       <div class="_pfimg wow fadeIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
-                           <img src="images/americanstyle.jpg" alt="" class="img-fluid">
-                           <div class="_pfbtn">
-                               <a href="images/americanstyle.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="fa fa-search"></i></a>
-                               <a href="#"><i class="fa fa-link"></i></a>
-                           </div>
-                       </div>
-                  </div>
-                  <div class="_prtflioitem _msitm column-width col-3">
-                       <div class="_pfimg wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
-                           <img src="images/clicandmove.jpg" alt="" class="img-fluid">
-                           <div class="_pfbtn">
-                               <a href="images/clicandmove.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="fa fa-search"></i></a>
-                               <a href="#"><i class="fa fa-link"></i></a>
-                           </div>
-                       </div>
-                  </div>
-               </div>
-           </div>
-      </section> -->
-       <!--Portfolio end -->
 
-      <section class="_myamprt">
-         <div class="container">
-            <div class="row">
-               <div class="col-3"></div>
+      <!--Portfolio Section-->
+    <section class="_portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="hd_main_ text-center">My Amazing Portfolio</h2>
+
+            <div class="row _mscntnr">
+                
+                <!-- Portfolio Item -->
+                <div class="_prtflioitem _msitm col-3">
+                    <div class="_pfimg wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <img src="images/americanstyle.jpg" alt="" class="img-fluid">
+                        <div class="_pfbtn">
+                           <a href="images/americanstyle.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="cs_icon search"></i></a>
+                           <a href="#"><i class="cs_icon link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item -->
+                <div class="_prtflioitem _msitm col-6">
+                    <div class="_pfimg wow fadeIn" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <img src="images/americanstyle.jpg" alt="" class="img-fluid">
+                        <div class="_pfbtn">
+                           <a href="images/americanstyle.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="cs_icon search"></i></a>
+                            <a href="#"><i class="cs_icon link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item -->
+                <div class="_prtflioitem _msitm col-3">
+                    <div class="_pfimg wow fadeIn" data-wow-delay="1000ms" data-wow-duration="1500ms">
+                        <img src="images/clicandmove.jpg" alt="" class="img-fluid">
+                        <div class="_pfbtn">
+                           <a href="images/clicandmove.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="cs_icon search"></i></a>
+                            <a href="#"><i class="cs_icon link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item -->
+                <div class="_prtflioitem _msitm col-3">
+                    <div class="_pfimg wow fadeIn" data-wow-delay="1500ms" data-wow-duration="1500ms">
+                        <img src="images/casino_contact.jpg" alt="" class="img-fluid">
+                        <div class="_pfbtn">
+                           <a href="images/casino_contact.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="cs_icon search"></i></a>
+                           <a href="https://casinocontact.co.uk" target="_blank"><i class="cs_icon link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item -->
+                <div class="_prtflioitem _msitm column-width col-3">
+                    <div class="_pfimg wow fadeIn" data-wow-delay="2000ms" data-wow-duration="1500ms">
+                        <img src="images/clicandmove.jpg" alt="" class="img-fluid">
+                        <div class="_pfbtn">
+                            <a href="images/clicandmove.jpg" class="lightbox-image" data-fancybox="Gallery"><i class="cs_icon search"></i></a>
+                            <a href="#"><i class="cs_icon link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Section-->
+
+
+      <section class="_cntct" id="contact">
+         <div class="_cntct_ovl">
+            <h2 class="hd_main_ _hd_ligt text-center">Contact Me</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                      <div class="_cntctform">
+                          <form>
+                              <div class="form-group">                               
+                                  <input class="form-control" type="text" id="name1">
+                                  <label for="name1">Name</label>
+                              </div>
+                              <div class="form-group">                               
+                                  <input class="form-control" type="email" id="email1">
+                                  <label for="email1">Email</label>
+                              </div>
+                              <div class="form-group">                               
+                                  <textarea class="form-control" id="message1" rows="4"></textarea>
+                                  <label for="message1">Message</label>
+                              </div>
+                              <button type="submit" class="_btnsbmt btn-style-one">
+                                 <span>send</span>
+                              </button>
+                          </form>
+                      </div><!--/.contact_form-->
+                  </div>
+                  <div class="col-md-5 offset-md-1">
+                      <div class="contact_right_single">
+                          <p>+880 - 84854 - 5599</p>
+                      </div><!--/.contact_right_single-->
+                      <div class="contact_right_single">
+                          <p>alexnai@naikere.com</p>
+                      </div><!--/.contact_right_single-->
+                      <div class="contact_right_single">
+                          <p>10/1 New Elephient Rood,
+                              Dhanmondi,Dhaka.</p>
+                      </div><!--/.contact_right_single-->
+                  </div>
+              </div>
             </div>
          </div>
       </section>
 
+      <!-- <footer>
+         dfgdhfgivhiuh
+      </footer> -->
+
+
+
+
       <!--Scroll to top-->
-      <div class="scroll-to-top scroll-to-target" data-target="html">
+      <div class="scroll-to-top">
          <span class="fa fa-angle-double-up"></span>
       </div>
 
       <script src="js/jquery.min.js"></script> 
-      <!-- bootstrap -->
-      <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <!-- bootstrap -->
       <!--Revolution Slider-->
       <script src="js/slider/revolution.min.js"></script>
       <script src="js/slider/tools.min.js"></script>
@@ -445,8 +506,8 @@
       <!--End Revolution Slider-->
       <script src="js/jquery.nicescroll.min.js"></script>
       <script src="js/isotope.js"></script>
-      <script src="js/wow.js"></script>
-      
+      <script src="js/jquery.fancybox.js"></script>
+      <script src="js/wow.js"></script>      
       <script src="js/script.js"></script> 
    </body>
 </html>
