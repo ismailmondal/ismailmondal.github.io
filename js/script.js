@@ -244,4 +244,110 @@
 
 	});
 
+
+
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyBwYKlh8laAVm2cOXLi-VCCZU90HiZ-Po0",
+	authDomain: "my-portfolio-c0e50.firebaseapp.com",
+	databaseURL: "https://my-portfolio-c0e50.firebaseio.com",
+	projectId: "my-portfolio-c0e50",
+	storageBucket: "my-portfolio-c0e50.appspot.com",
+	messagingSenderId: "226226104990"
+};
+firebase.initializeApp(config);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+
+
+$("#contactMe").validate({
+    rules: {
+        "name": {
+            required: true
+        },
+        "phone": {
+            digits: true,
+            minlength: 10,
+            maxlength: 10
+        },
+        "email": {
+            required: true,
+            email: true
+        },
+        "company": {
+            required: true,
+        },
+        "message": {
+            required: true
+        },
+    },
+    messages: {
+        "name": {
+            required: "Please enter your name"
+        },
+        "phone": {
+            required: "Please enter your phone"
+        },
+        "email": {
+            required: "Please enter your email",
+            email: "Please enter valid email"
+        },
+        "company": {
+            required: "Please enter company name"
+        },
+        "message": {
+            required: "Please enter your message"
+        },
+    },
+    errorElement : 'span',
+    submitHandler: function (form) {
+    	//alert();
+    	submitForm();
+    }
+});
+
+// Submit form
+function submitForm(){
+	$("._btnsbmt").html("Sending...");
+  // Get values
+  var name = $("[name='name']").val();
+  var phone = $("[name='phone']").val();
+  var email = $("[name='email']").val();
+  var company = $("[name='company']").val();
+  var message = $("[name='message']").val();
+
+  // Save message
+  saveMessage(name, phone, email, company, message);
+
+  // Show alert
+  $('.alert').addClass('show');
+
+  // Clear form
+  $('#contactMe')[0].reset()
+
+  // Hide alert after 5 seconds
+  setTimeout(function(){
+    $('.alert').removeClass('show');
+    $("._btnsbmt").html("Send");
+  },5000);
+
+  
+  
+}
+
+// Save message to firebase
+function saveMessage(name, phone, email, company, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    phone: phone,
+    email: email,
+    company: company,
+    message: message
+  });
+}
+
+
 })(window.jQuery);

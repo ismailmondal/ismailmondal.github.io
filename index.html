@@ -428,28 +428,51 @@
             <h2 class="hd_main_ _hd_ligt text-center">Contact Me</h2>
             <div class="container">
                <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                       <div class="_cntctform">
-                          <form>
-                              <div class="form-group">                               
-                                  <input class="form-control" type="text" id="name1">
-                                  <label for="name1">Name</label>
+                        <div class="alert">Your message has been sent</div>
+                          <form id="contactMe">
+                           <div class="row">
+                              <div class="col-6">
+                                 <div class="form-group">                               
+                                     <input class="form-control" type="text" name="name">
+                                     <label class="_mLabel required" for="name">Name</label>
+                                 </div>
                               </div>
-                              <div class="form-group">                               
-                                  <input class="form-control" type="email" id="email1">
-                                  <label for="email1">Email</label>
+                              <div class="col-6">
+                                 <div class="form-group">                               
+                                     <input class="form-control" type="tel" name="phone">
+                                     <label class="_mLabel" for="phone">Phone</label>
+                                 </div>
                               </div>
-                              <div class="form-group">                               
-                                  <textarea class="form-control" id="message1" rows="4"></textarea>
-                                  <label for="message1">Message</label>
+                              <div class="col-6">
+                                 <div class="form-group">                               
+                                     <input class="form-control" type="email" name="email">
+                                     <label class="_mLabel required" for="email">Email</label>
+                                 </div>
                               </div>
-                              <button type="submit" class="_btnsbmt btn-style-one">
-                                 <span>send</span>
-                              </button>
+                              <div class="col-6">
+                                 <div class="form-group">                               
+                                     <input class="form-control" type="text" name="company">
+                                     <label class="_mLabel required" for="company">Company</label>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">                               
+                                     <textarea class="form-control" name="message" rows="4"></textarea>
+                                     <label class="_mLabel required" for="message">Message</label>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <button type="submit" class="_btnsbmt btn-style-one">
+                                    <span>send</span>
+                                 </button>
+                              </div>
+                           </div>
                           </form>
                       </div>
                   </div>
-                  <div class="col-md-5 offset-md-1">
+                  <div class="col-md-5">
                       
                   </div>
               </div>
@@ -487,6 +510,10 @@
       <script src="js/jquery.fancybox.js"></script>
       <!-- Wow js -->
       <script src="js/wow.js"></script>   
+      <script src="js/jquery.validate.min.js"></script>  
+      <!-- firebase -->
+      <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script><!-- 
+      <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script> -->
       <!-- Custom js -->   
       <script src="js/script.js"></script> 
       
