@@ -1332,3 +1332,11 @@ span.error {
         -ms-transform: translateY(0);
             transform: translateY(0);
 }
+
+
+._prgsbr {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #efefef;
+}
