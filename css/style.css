@@ -3,7 +3,7 @@
 /*======================================
 	Fonts
 ======================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,800,900');
 @import url('animate.css');
 
 /*=======================================
@@ -194,34 +194,45 @@ ul,li {
 	Scroll To Top style
 ==========================================*/
 
-.scroll-to-top{
-	position:fixed;
-	bottom:20px;
-	right:20px;
-	width:56px;
-	height:56px;
-	color:#ffffff;
-	font-size:22px;
-	text-transform:uppercase;
-	line-height:56px;
-	text-align:center;
-	z-index:100;
-	cursor:pointer;
-	border-radius:0px;
-	background:#0a0a0a;
-	display:none;
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 56px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #0a0a0a;
+    display: none;
+    transition: all .3s ease;
 }
-
 .scroll-to-top:hover{
-	color:#ffffff;
-	background:#fc6183;
+	background:#1aefbe;
 }
+.scroll-to-top:hover span {
+	border-color: #000;
+}
+.scroll-to-top > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-color: #fff;
+    transform: rotate(-45deg) translate(-50%, -50%);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform-origin: top left;
+    transition: all .3s ease;
 
+}
 /*==========================================
 	Main Header style
 ===========================================*/
@@ -998,6 +1009,9 @@ ul,li {
 .about {
     padding: 60px 0;
     position: relative;
+    background: url('../images/about_bg.jpg') 0 0 no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 .hd_main_ {
     color: #414857;
@@ -1005,7 +1019,26 @@ ul,li {
     font-weight: 700;
     line-height: 1.1em;
     text-shadow: 0px 6px 2px #eaf2ff;
-    margin-bottom: .6em;
+    margin-bottom: .2em;
+}
+.devider {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.devider > span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;    
+    transform: rotate(54deg);
+    margin: 0 3px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.devider.dark > span {
+	background-color: #4f628c;
+}
+.devider.light > span {
+	background-color: #fff;
 }
 .blur_icon {
     position: absolute;
@@ -1040,9 +1073,9 @@ ul,li {
 	height: 40px;
 }
 .rect {
-	background: url(../images/icon-10.png) 0 0 no-repeat;
-	top: 100px;
-    right: 80%;	
+    background: url(../images/icon-10.png) 0 0 no-repeat;
+    bottom: 100px;
+    left: 80%;
 }
 
 
@@ -1100,11 +1133,33 @@ ul,li {
 ._sklstrt {
     transform: rotate(45deg);
 }
+._sklswrp {
+    padding: 0 0 4em;
+}
 /*===============================
 	Portfolio
 =================================*/
 ._portfolio {
     padding: 4em 0;
+    background-color: #f7f7f7;
+    position: relative;
+}
+._dottedBg {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    background: url(../images/dots.png) 0 0 no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+._dottedBg._topLeft {
+    left: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+._dottedBg._boottom_right {
+	bottom: 0;
+	right: 0;
 }
 ._prtflioitem ._pfimg:after {
     top: -100%;
@@ -1215,7 +1270,7 @@ ul,li {
     background-size: cover;  
 }
 ._cntct_ovl {
-    background-color: rgba(65, 72, 87, 0.89);
+    background-color: rgba(65, 72, 87, 0.8);
     padding: 4em 0;
 }
 .hd_main_._hd_ligt {
@@ -1241,7 +1296,7 @@ ul,li {
     border-radius: 2px;
     border: 0;    
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.08);
     color: var(--color-light);
 }
 ._cntctform .form-control:focus {
@@ -1334,9 +1389,95 @@ span.error {
 }
 
 
-._prgsbr {
+
+
+._cntctInfo > span {
+    padding: 15px;
+    border-radius: 3px;
+    align-items: flex-start;
+}
+._cntctInfo > span:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 6px 6px 25px rgba(65, 72, 87, 0.16);
+}
+._cntctInfo > span:not(:last-child) {
+	margin-bottom: 15px 
+}
+._cntctInfo > span > img {
+    max-height: 28px;
+    vertical-align: top;
+    margin-right: 10px;
+    display: inline-block;
+}
+._cntctInfo > span > address {
+    display: inline-block;
+    margin: 0;
+}
+._cntctInfo > span > a, ._cntctInfo > span > address {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+}
+._cntctInfo > span > a,
+._cntctInfo > span {
+    transition: all .3s ease;	
+}
+._cntctInfo > span > a:hover {
+    color: #19efba;
+}
+
+.footer {
+    background-color: #3d4951;
+    padding: 1.5em 0;
+}
+._copyright > span {
+    color: #fff;
+    font-size: 14px;
+}
+._socialMedia > ul {
+	text-align: right;
+}
+._socialMedia > ul > li > a > svg {
+    width: 15px;
+}
+._socialMedia > ul > li > a > svg > path {
+    fill: #fff;
+}
+._socialMedia > ul > li > a:hover svg > path {
+	fill: #19f1b4
+}
+._socialMedia > ul > li {
+    display: inline-block;
+}
+._socialMedia > ul > li:not(:last-child) {
+    margin-right: 10px;
+}
+._socialMedia > ul > li > a {
     display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #efefef;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 50%;
+    position: relative;
+}
+._socialMedia > ul > li > a:after {
+	content: "";
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: scale(.3);
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	transform-origin: center;
+	transition: all .3s ease;
+	border-radius: 50%;
+}
+._socialMedia > ul > li > a:hover:after {
+	transform: scale(1);
+	opacity: 1;
 }
