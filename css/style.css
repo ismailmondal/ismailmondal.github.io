@@ -776,7 +776,12 @@ ul,li {
 	padding:0px 0px 30px;
 	background: #1c1c1c;
 }
-
+.hidden-bar .logo h1 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
 .hidden-bar .logo img{
 	display:inline-block;
 	max-width:100%;	
@@ -1136,6 +1141,21 @@ ul,li {
 ._sklswrp {
     padding: 0 0 4em;
 }
+
+
+._prgsbrs {
+    margin-bottom: 35px;
+}
+._prgsbr {
+	height: 6px;
+  	position: relative;
+}
+._prgsbr .progressbar-text {
+    transform: translate(0) !important;
+    left: auto !important;
+    right: 0;
+    top: -20px !important;
+}
 /*===============================
 	Portfolio
 =================================*/
@@ -1206,7 +1226,8 @@ ul,li {
     overflow: hidden;
     box-shadow: 7px 8px 13px #132e8f17;
 }
-._pfimg img {
+._pfimg img,
+._pfimg  {
     border-radius: 4px;
 }
 ._prtflioitem ._pfbtn {
@@ -1306,6 +1327,9 @@ ul,li {
     outline: 0;
     background-size: 0% 2px;
 }
+._cntctform .form-control.error {
+	background-image: linear-gradient(#ff8585, #ff8585), linear-gradient(#ff8585, #ff8585);
+}
 ._cntctform .form-group ._mLabel {
   color: #fff;    
   font-size: 15px;
@@ -1336,7 +1360,6 @@ ul,li {
     }
 }
 ._btnsbmt.btn-style-one {
-    display: block;
     padding: 10px 40px;
 }
 ._btnsbmt.btn-style-one:hover span {
@@ -1345,11 +1368,12 @@ ul,li {
 span.error {
     position: absolute;
     font-size: 12px;
-    color: #ff81a1;
+    color: #ffa7a7;
     font-style: italic;
     display: block;
     bottom: -22px;
     left: 0;
+    right: 0;
 }
 .required:after {
     content: "*";
@@ -1395,6 +1419,7 @@ span.error {
     padding: 15px;
     border-radius: 3px;
     align-items: flex-start;
+    flex-wrap: nowrap;
 }
 ._cntctInfo > span:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -1409,6 +1434,9 @@ span.error {
     margin-right: 10px;
     display: inline-block;
 }
+._cntctInfo span a, ._cntctInfo span address {
+    flex: 1;
+}
 ._cntctInfo > span > address {
     display: inline-block;
     margin: 0;
@@ -1421,6 +1449,8 @@ span.error {
 ._cntctInfo > span > a,
 ._cntctInfo > span {
     transition: all .3s ease;	
+    white-space: normal;
+    word-wrap: break-word;
 }
 ._cntctInfo > span > a:hover {
     color: #19efba;

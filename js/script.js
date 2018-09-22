@@ -78,10 +78,10 @@
 ============================================*/
 $(document).ready(function() {  
 	//add margin to top of the banner
-	var navHeight = $("nav").innerHeight();
-	$(".main-slider").css({
-		"padding-top":navHeight
-	});
+	// var navHeight = $("nav").innerHeight();
+	// $(".main-slider").css({
+	// 	"padding-top":navHeight
+	// });
 
 	//custom scroll bar
     $("html").niceScroll({
@@ -126,80 +126,80 @@ $(document).ready(function() {
 
 	//revolution slider setting
 	var rev;
-    if($("#rev_slider_one").revolution == undefined){
-        revslider_showDoubleJqueryError("#rev_slider_one");
+    if($(".rev_slider").revolution == undefined){
+        revslider_showDoubleJqueryError(".rev_slider");
     } else {
-        rev = $("#rev_slider_one").show().revolution({
-		sliderType:"standard",
-            sliderLayout:"auto",
-            dottedOverlay:"yes",
-            delay:10000,
-            navigation: {
-                keyboardNavigation:"off",
-                keyboard_direction: "horizontal",
-                mouseScrollNavigation:"off",
-                    mouseScrollReverse:"default",
-                onHoverStop:"off",
-                touch:{
-                    touchenabled:"on",
-                    touchOnDesktop:"off",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 1,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
+        rev = $(".rev_slider").show().revolution({
+		    sliderType:"standard",
+        sliderLayout:"auto",
+        dottedOverlay:"yes",
+        delay:10000,
+        navigation: {
+            keyboardNavigation:"off",
+            keyboard_direction: "horizontal",
+            mouseScrollNavigation:"off",
+                mouseScrollReverse:"default",
+            onHoverStop:"off",
+            touch:{
+                touchenabled:"on",
+                touchOnDesktop:"off",
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: "horizontal",
+                drag_block_vertical: false
+            },
+            arrows: {
+                style:"metis",
+                enable:true,
+                hide_onmobile:true,
+                hide_under:600,
+                hide_onleave:true,
+                tmp:'',
+                left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:0,
+                    v_offset:0
                 },
-                arrows: {
-                    style:"metis",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:true,
-                    tmp:'',
-                    left: {
-                        h_align:"left",
-                        v_align:"center",
-                        h_offset:0,
-                        v_offset:0
-                    },
-                    right: {
-                        h_align:"right",
-                        v_align:"center",
-                        h_offset:0,
-                        v_offset:0
-                    }
-                }                    
-            },
-             responsiveLevels:[1200,1400,778,600],
-             visibilityLevels:[1200,1400,778,600],
-             gridwidth:[1200,1400,778,600],
-             gridheight:[890,790,690,590],
-             lazyType:"none",
-             parallax: {
-                type:"mouse",
-                origo:"slidercenter",
-                speed:2000,
-                speedbg:0,
-                speedls:0,
-                levels:[2,3,4,5,10,7,12,16,10,50,47,48,49,50,51,55],
-            },
-             shadow:0,
-             spinner:"off",
-             stopLoop:"off",
-             stopAfterLoops:-1,
-             stopAtSlide:-1,
-             shuffle:"off",
-             autoHeight:"off",
-             hideThumbsOnMobile:"off",
-             hideSliderAtLimit:0,
-             hideCaptionAtLimit:0,
-             hideAllCaptionAtLilmit:0,
-             debugMode:false,
-             fallbacks: {
-                 simplifyAll:"off",
-                 nextSlideOnWindowFocus:"off",
-                 disableFocusListener:false,
-            }
-        });
+                right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:0,
+                    v_offset:0
+                }
+            }                    
+        },
+        responsiveLevels:[1200,1400,778,600],
+        visibilityLevels:[1200,1400,778,600],
+        gridwidth:[1200,1400,778,600],
+        gridheight:[890,790,690,590],
+        lazyType:"none",
+        parallax: {
+          type:"mouse",
+          origo:"slidercenter",
+          speed:2000,
+          speedbg:0,
+          speedls:0,
+          levels:[2,3,4,5,10,7,12,16,10,50,47,48,49,50,51,55],
+        },
+        shadow:0,
+        spinner:"off",
+        stopLoop:"off",
+        stopAfterLoops:-1,
+        stopAtSlide:-1,
+        shuffle:"off",
+        autoHeight:"off",
+        hideThumbsOnMobile:"off",
+        hideSliderAtLimit:0,
+        hideCaptionAtLimit:0,
+        hideAllCaptionAtLilmit:0,
+        debugMode:false,
+        fallbacks: {
+           simplifyAll:"off",
+           nextSlideOnWindowFocus:"off",
+           disableFocusListener:false,
+        }
+      });
     };
 
     //scroll to top
@@ -252,6 +252,66 @@ $(document).ready(function() {
 	  });
 	});
 
+  // line progress
+  var bar = new ProgressBar.Line( _html , {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#e44d26',
+    trailColor: '#ffa993',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+  bar.animate(.85);
+
+  var bar = new ProgressBar.Line( _css , {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#2163af',
+    trailColor: '#33a9dc',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+  bar.animate(.80);
+
+  var bar = new ProgressBar.Line( _jquery , {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#0a293d',
+    trailColor: '#617e90',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+  bar.animate(.75);
+
+  var bar = new ProgressBar.Line( _javaScript , {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#efc725',
+    trailColor: '#fbde34',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+  bar.animate(.55);
+
+  
+
+  
 });
 
 /* =============================================
@@ -294,6 +354,7 @@ $("#contactMe").validate({
             required: true
         },
         "phone": {
+            required: true,
             digits: true,
             minlength: 10,
             maxlength: 10
