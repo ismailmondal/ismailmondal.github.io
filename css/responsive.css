@@ -107,6 +107,24 @@
 	.hd_main_ {
 	    font-size: 2em;
 	}
+	._sklst > li > div {
+	    width: 90px;
+	    height: 90px;
+	}
+	._sklst > li > div h2 {
+	    font-size: 12px;
+	}
+	._sklst > li > div img {
+	    width: 28px;
+	}
+	._sklst > li:first-child > div {
+	    width: 110px;
+	    height: 110px;
+	}
+	._main-slider .theme-btn {
+	    padding: 10px 30px;
+	    font-size: 12px;
+	}
 }
 @media screen and (max-width: 414px){
 	._cntctform .col-6,

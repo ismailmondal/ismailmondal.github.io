@@ -64,6 +64,10 @@ ul,li {
 	--color-light: #fff;
 	--dark-gray: #333;
 }
+body,
+html {
+	overflow-x: hidden;
+}
 
 body {
 	font-size:14px;
@@ -73,8 +77,7 @@ body {
 	background: var(--color-light);
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	font-family: var(--main-font);
-	overflow-x: hidden;
+	font-family: var(--main-font);	
 }
 
 .flex {
