@@ -388,16 +388,14 @@ body {
 	height: 100vh;
 	background: #1c1c1c;
 	z-index: 1000;
-	transition: all 700ms ease;
-	-webkit-transition: all 700ms ease;
-	-ms-transition: all 700ms ease;
-	-o-transition: all 700ms ease;
-	-moz-transition: all 700ms ease;
-}
-.hidden-bar.right-align {
 	right: -400px;
-
+	transition: right 700ms ease;
+	-webkit-transition: right 700ms ease;
+	-ms-transition: right 700ms ease;
+	-o-transition: right 700ms ease;
+	-moz-transition: right 700ms ease;
 }
+
 
 .hidden-bar.right-align.visible-sidebar{
 	right:0px;
