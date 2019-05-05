@@ -21,6 +21,9 @@
 	}
 }
 @media screen and (max-width: 991px) {
+	.about > span {
+	    opacity: .2;
+	}
 	._prtflioitem {
 		-ms-flex: 0 0 50%;
 	    flex: 0 0 50%;
@@ -48,11 +51,17 @@
 
 
 @media screen and (max-width: 768px) {
-
-
+	._main-slider h1 {
+		font-size: 3.2em;
+	}
 }
 
-@media screen and (max-width: 767px){	
+@media screen and (max-width: 767px){
+	.rect {
+		left: auto;
+		right: 0;
+	}	
+
 	.main-header .collapse:not(.show) {
 		display: none;
 	}
@@ -94,6 +103,9 @@
 @media screen and (max-width: 568px){
 	.main-header .navbar-brand h1 {
 		font-size: 1.1em;
+	}
+	.hd_main_ {
+	    font-size: 2em;
 	}
 }
 @media screen and (max-width: 414px){

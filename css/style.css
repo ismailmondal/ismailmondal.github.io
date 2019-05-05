@@ -1,4 +1,4 @@
-/*  Portfolio HTML Template */
+
 
 /*======================================
 	Fonts
@@ -74,6 +74,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-family: var(--main-font);
+	overflow-x: hidden;
 }
 
 .flex {
@@ -174,56 +175,7 @@ body {
        object-fit: contain;
 }
 
-/*==========================================
-	Scroll To Top style
-==========================================*/
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    font-size: 22px;
-    text-transform: uppercase;
-    line-height: 56px;
-    text-align: center;
-    z-index: 100;
-    cursor: pointer;
-    border-radius: 50%;
-    background: #0a0a0a;
-    display: none;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.scroll-to-top:hover{
-	background:#1aefbe;
-}
-.scroll-to-top:hover span {
-	border-color: #000;
-}
-.scroll-to-top > span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-color: #fff;
-    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
-        -ms-transform: rotate(-45deg) translate(-50%, -50%);
-            transform: rotate(-45deg) translate(-50%, -50%);
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    -webkit-transform-origin: top left;
-        -ms-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
 
-}
 /*==========================================
 	Main Header style
 ===========================================*/
@@ -1228,4 +1180,55 @@ span.error {
 	    -ms-transform: scale(1);
 	        transform: scale(1);
 	opacity: 1;
+}
+
+/*==========================================
+	Scroll To Top style
+==========================================*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 56px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #0a0a0a;
+    display: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.scroll-to-top:hover{
+	background:#1aefbe;
+}
+.scroll-to-top:hover span {
+	border-color: #000;
+}
+.scroll-to-top > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-color: #fff;
+    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+        -ms-transform: rotate(-45deg) translate(-50%, -50%);
+            transform: rotate(-45deg) translate(-50%, -50%);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
 }
